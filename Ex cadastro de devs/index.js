@@ -9,7 +9,7 @@ const name = document.getElementById('name').value
 
         const div = document.getElementById("div")
 
-        const form = document.createElement('form')
+        const form = document.createElement('li')
 
         const label = document.createElement('label')
         label.innerText = 'Nova tecnología '
@@ -35,27 +35,16 @@ const name = document.getElementById('name').value
         labelRadio2.innerText = ' 5 anos\n'
 
         const btnRemove = document.createElement('button')
+        btnRemove.type = 'button'
         btnRemove.innerText = 'Remover Tecnologia'
-        btnRemove.addEventListener("click", function(re){
-                ev.preventDefault()
-                document.removeEventListener(btnNovaTec)
+        btnRemove.addEventListener("click", function(){
+                document.removeChild(form)
             })
 
-        const btnsave = document.createElement('button')
-        btnsave.innerText = 'Salvar'
-            btnsave.addEventListener('click', function(sa){
-                ev.preventDefault()
-                const nome = 'Nome: ' + document.getElementById('name').value
-                const tec ='Tecnologia' + label.value
-                const radio = document.querySelector('input: name="exp"').value
-
-                lista.push(nome, tec, radio)
-
-                console.log({lista})                
-            })
+        
 
 
-        form.append(label, input, labelRadio, inputRadio1, labelRadio1, inputRadio2, labelRadio2, btnRemove, btnsave)
+        form.append(label, input, labelRadio, inputRadio1, labelRadio1, inputRadio2, labelRadio2, btnRemove)
 
         div.append(form)
 })
