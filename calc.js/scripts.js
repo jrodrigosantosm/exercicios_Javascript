@@ -10,7 +10,20 @@ document.querySelectorAll(".botoes").forEach(function(funcaodosbotoes){
     })
 })
 
+//evento do botão C para limpar input, o botão focus serve para já deixar o input selecionado focando nele.//
+document.getElementById('botaoc').addEventListener("click", function(){
+    input.value=""
+    input.focus()
+})
 
+//função calculate utilizando a função eval, ele avalia o código que e passado para ele é o executa.
+function calculate () {
+    const result = eval(input.value)
+    resposta.value = result
+}
+
+//função do botão de igual, mesma função do botão de enter//
+document.getElementById("igual").addEventListener("click", calculate)
 
 //ira fazer uma verificação, se a tecla apertada não estiver inclusa na lista, não tera um retorno//
 input.addEventListener("keydown",function(ev){
@@ -18,8 +31,7 @@ input.addEventListener("keydown",function(ev){
     if (listadeKeys.includes(ev.key)){
         input.value+=ev.key
         return
-    }    
-
+    }
     if (ev.key ==="Backspace"){
         input.value=input.value.slice(0,-1)
 
