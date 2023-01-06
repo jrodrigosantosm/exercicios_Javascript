@@ -1,0 +1,76 @@
+*{  
+    border: 0 none;
+    outline: 0;
+}
+
+#calc{
+    max-width: 400px;
+    max-height: 800px;
+    margin: 0 auto;
+    margin-top: 100px;
+    border: solid 2px black;
+    text-align: center;
+    background-color: rgb(212, 212, 230);
+    border-radius: 10px;    
+}
+
+#visor{
+    display: flex;
+    flex-direction: column;
+    max-width: 390px;
+    margin-bottom: 10px;
+    height: 50px;
+    margin: auto;
+}
+
+#botoes{
+    display: grid;
+    grid-template-columns:1fr 1fr 1fr 1fr ;
+    margin: 0 auto;    
+}
+
+#visorescrever{
+    border: none;
+    background-color: white;
+    border-radius: 20px;
+    font-size: 20px;
+    text-align: right;
+    padding-right: 15px;
+    padding-top: 5px;     
+}
+
+#visorresultado{
+    border: none;
+    background-color: white;
+    font-size: 20px; 
+    border-radius: 15px;
+    padding-right: 15px;
+}
+
+#visor{
+    border: solid 1px black;
+    margin: 8px;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.botoes{
+    width: 90px;
+    height: 80px;
+    margin: 5px;
+    border-radius: 15px;
+    border: solid 1px black;
+    font-size: 23px;   
+}
+
+#botaoc{
+    max-height: 50px;
+}
+
+#botaoparentese{
+    max-height: 50px;
+}
+
+#botaoporcentagem{
+    max-height: 50px;
+}

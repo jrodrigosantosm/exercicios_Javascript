@@ -2,6 +2,8 @@ let escuro = document.getElementById('black')
 let claro =  document.getElementById('white')
 let titulo = document.getElementById('titulo')
 
+titulo.attribute('disable')=tr
+
 //alterando as propriedades direto na tag style
 function branco(){    
     document.body.style.color = '#212529'
