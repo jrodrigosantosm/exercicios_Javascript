@@ -12,8 +12,9 @@ document.querySelectorAll(".botoes").forEach(function(funcaodosbotoes){
 
 //evento do botão C para limpar input, o botão focus serve para já deixar o input selecionado focando nele.//
 document.getElementById('botaoc').addEventListener("click", function(){
-    input.value=""
+    input.value = ""
     input.focus()
+    resposta.value = ""
 })
 
 //função calculate utilizando a função eval, ele avalia o código que e passado para ele é o executa.

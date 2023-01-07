@@ -1,6 +1,7 @@
 *{  
     border: 0 none;
     outline: 0;
+    
 }
 
 #calc{
@@ -45,6 +46,7 @@
     font-size: 20px; 
     border-radius: 15px;
     padding-right: 15px;
+    text-align: right;
 }
 
 #visor{
@@ -73,4 +75,22 @@
 
 #botaoporcentagem{
     max-height: 50px;
+}
+
+#igual{
+    width: 90px;
+    height: 80px;
+    margin: 5px;
+    border-radius: 15px;
+    border: solid 1px black;
+    font-size: 23px;   
+}
+
+#botaoc{
+    width: 90px;
+    height: 80px;
+    margin: 5px;
+    border-radius: 15px;
+    border: solid 1px black;
+    font-size: 23px;   
 }
