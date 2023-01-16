@@ -1,7 +1,7 @@
 *{  
     border: 0 none;
     outline: 0;
-    
+    font-family: 'Kanit', sans-serif;    
 }
 
 #calc{
@@ -11,7 +11,7 @@
     margin-top: 100px;
     border: solid 2px black;
     text-align: center;
-    background-color: rgb(212, 212, 230);
+    background-color: rgb(212, 212, 236);
     border-radius: 10px;    
 }
 
@@ -20,7 +20,7 @@
     flex-direction: column;
     max-width: 390px;
     margin-bottom: 10px;
-    height: 50px;
+    height: 70px;
     margin: auto;
 }
 
